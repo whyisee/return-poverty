@@ -1,0 +1,75 @@
+[
+  {
+    "id": "busy_but_thin_profit",
+    "phase": "opening",
+    "category": "operation",
+    "title": "晚上 11 点的账本",
+    "content": "今天营业额很好看，但你发现净现金流并不好看。",
+    "effect": { "trafficRate": 0.06, "discountRate": 0.02 },
+    "weight": 120
+  },
+  {
+    "id": "first_bad_review",
+    "phase": "opening",
+    "category": "operation",
+    "title": "第一条差评",
+    "content": "高峰期出餐慢，有顾客给了一条差评。",
+    "effect": { "trafficRate": -0.05, "reputation": -3, "energy": -2 },
+    "weight": 90
+  },
+  {
+    "id": "franchise_manager_call",
+    "phase": "opening",
+    "category": "franchise",
+    "title": "招商经理的电话",
+    "content": "对方说首周流水不够，是因为你没有买本地达人套餐。",
+    "effect": { "impulse": 5, "familyPressure": 2 },
+    "weight": 80
+  },
+  {
+    "id": "rainy_day",
+    "phase": "opening",
+    "category": "market",
+    "title": "下雨的一天",
+    "content": "堂食客流下降，外卖订单多了一点，但平台成本更明显。",
+    "effect": { "trafficRate": -0.08, "deliveryRate": 0.08, "platformRate": 0.02 },
+    "weight": 80
+  },
+  {
+    "id": "platform_discount_pressure",
+    "phase": "stable",
+    "category": "platform",
+    "title": "平台活动压力",
+    "content": "平台建议继续加满减，否则排名会下降。",
+    "effect": { "discountRate": 0.04, "trafficRate": 0.08, "impulse": 4 },
+    "weight": 100
+  },
+  {
+    "id": "competitor_low_price",
+    "phase": "stable",
+    "category": "market",
+    "title": "对面新开低价竞品",
+    "content": "对面新店开业，全场低价抢客。",
+    "effect": { "trafficRate": -0.14, "familyPressure": 4, "impulse": 3 },
+    "weight": 100
+  },
+  {
+    "id": "family_bill_due",
+    "phase": "crisis",
+    "category": "family",
+    "title": "伴侣的提醒",
+    "content": "下个月有房贷、学费和老人检查费，家里希望你给一个止损线。",
+    "effect": { "familyPressure": 10, "energy": -3 },
+    "weight": 100
+  },
+  {
+    "id": "rent_discount_ends",
+    "phase": "crisis",
+    "category": "market",
+    "title": "免租优惠结束",
+    "content": "商场前三个月免租优惠结束，真实租金开始进入账本。",
+    "effect": { "dailyRentCostDelta": 18000, "familyPressure": 6 },
+    "weight": 100
+  }
+]
+

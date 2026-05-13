@@ -1,0 +1,87 @@
+[
+  {
+    "id": "milk_tea",
+    "name": "奶茶",
+    "description": "标准化强，上手快，但同质化和价格战都很凶。",
+    "baseParams": {
+      "baseTraffic": 92,
+      "conversionRate": 0.42,
+      "averageTicketAmount": 1800,
+      "materialRate": 0.34,
+      "platformRate": 0.08,
+      "deliveryRate": 0.48,
+      "discountRate": 0.08,
+      "wasteRate": 0.08,
+      "dailyRentCost": 42000,
+      "dailyLaborCost": 68000,
+      "dailyUtilityCost": 12000
+    },
+    "strengths": ["年轻客群明确", "活动容易带来短期流量"],
+    "risks": ["价格战", "水果和奶制品损耗", "竞品密度高"],
+    "uniqueSystems": ["爆品热度", "天气影响", "学生周期"]
+  },
+  {
+    "id": "burger",
+    "name": "汉堡",
+    "description": "正餐属性更稳，但外卖评价、设备和出餐效率会持续影响利润。",
+    "baseParams": {
+      "baseTraffic": 78,
+      "conversionRate": 0.46,
+      "averageTicketAmount": 2600,
+      "materialRate": 0.38,
+      "platformRate": 0.1,
+      "deliveryRate": 0.62,
+      "discountRate": 0.07,
+      "wasteRate": 0.05,
+      "dailyRentCost": 46000,
+      "dailyLaborCost": 76000,
+      "dailyUtilityCost": 18000
+    },
+    "strengths": ["外卖需求稳定", "套餐客单相对可控"],
+    "risks": ["差评影响大", "设备维护压力", "平台抽成高"],
+    "uniqueSystems": ["高峰产能", "设备健康", "差评处理"]
+  },
+  {
+    "id": "coffee",
+    "name": "咖啡",
+    "description": "单杯毛利看起来高，但房租、坪效和低价连锁会持续施压。",
+    "baseParams": {
+      "baseTraffic": 64,
+      "conversionRate": 0.38,
+      "averageTicketAmount": 3200,
+      "materialRate": 0.28,
+      "platformRate": 0.06,
+      "deliveryRate": 0.28,
+      "discountRate": 0.05,
+      "wasteRate": 0.04,
+      "dailyRentCost": 68000,
+      "dailyLaborCost": 72000,
+      "dailyUtilityCost": 15000
+    },
+    "strengths": ["会员复购空间", "品牌感强"],
+    "risks": ["装修和位置投入高", "客流不稳定", "低价连锁竞争"],
+    "uniqueSystems": ["座位利用", "会员习惯", "坪效"]
+  },
+  {
+    "id": "bakery",
+    "name": "烘焙",
+    "description": "产品展示强，节日有爆发，但报废率和师傅人工是核心风险。",
+    "baseParams": {
+      "baseTraffic": 70,
+      "conversionRate": 0.4,
+      "averageTicketAmount": 3000,
+      "materialRate": 0.32,
+      "platformRate": 0.05,
+      "deliveryRate": 0.18,
+      "discountRate": 0.04,
+      "wasteRate": 0.12,
+      "dailyRentCost": 52000,
+      "dailyLaborCost": 94000,
+      "dailyUtilityCost": 22000
+    },
+    "strengths": ["节日爆发明显", "可做预售和团购"],
+    "risks": ["报废率高", "师傅人工贵", "生产节奏复杂"],
+    "uniqueSystems": ["产量预测", "临期处理", "预售机制"]
+  }
+]
+

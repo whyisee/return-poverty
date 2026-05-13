@@ -1,0 +1,48 @@
+[
+  {
+    "id": "conservative",
+    "name": "保守开局",
+    "description": "装修和投流都克制，把更多现金留给试错。",
+    "effect": {
+      "cash": -6800000,
+      "dailyRentCostDelta": -6000,
+      "reputation": -1,
+      "information": 4
+    }
+  },
+  {
+    "id": "self_owned",
+    "name": "自营开局",
+    "description": "不交加盟费，但需要自己摸索产品和运营。",
+    "effect": {
+      "cash": -9200000,
+      "reputation": 1,
+      "information": 2,
+      "impulse": -2
+    }
+  },
+  {
+    "id": "franchise",
+    "name": "加盟开局",
+    "description": "开局更像样，但加盟费和指定物料会抬高压力。",
+    "effect": {
+      "cash": -13800000,
+      "reputation": 4,
+      "information": -2,
+      "impulse": 5,
+      "materialRateDelta": 0.03
+    }
+  },
+  {
+    "id": "heavy_decoration",
+    "name": "重装修开局",
+    "description": "第一眼更漂亮，但现金流安全垫会被明显压薄。",
+    "effect": {
+      "cash": -16800000,
+      "reputation": 6,
+      "impulse": 8,
+      "dailyRentCostDelta": 8000
+    }
+  }
+]
+

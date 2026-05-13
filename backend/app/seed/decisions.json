@@ -1,0 +1,101 @@
+[
+  {
+    "id": "stock_carefully",
+    "phase": "opening",
+    "title": "保守备货",
+    "description": "少压库存，牺牲一点峰值销量，先降低报废。",
+    "cost": { "energy": 1 },
+    "effect": { "trafficRate": -0.03, "wasteRate": -0.04, "information": 2 },
+    "risk": ["爆单时可能断货"],
+    "processLogs": ["店主按昨日销量重新备货，后厨库存压力下降。", "午后有一小段断货，但报废损耗明显变少。"],
+    "insight": "新店第一周最怕用幻想备货。"
+  },
+  {
+    "id": "opening_discount",
+    "phase": "opening",
+    "title": "开业满减",
+    "description": "用活动把流水做起来，但优惠会直接吞掉利润。",
+    "cost": { "energy": 2 },
+    "effect": { "trafficRate": 0.22, "discountRate": 0.08, "reputation": 1, "impulse": 2 },
+    "risk": ["低价客群可能不复购", "账面热闹但现金流变差"],
+    "processLogs": ["平台曝光上涨，低价订单明显变多。", "高峰时排队变长，顾客觉得热闹，但优惠成本同步扩大。"],
+    "insight": "满减买来的热闹，要用复购验证价值。"
+  },
+  {
+    "id": "local_ads",
+    "phase": "opening",
+    "title": "本地投流",
+    "description": "购买本地达人或平台曝光，短期提高订单。",
+    "cost": { "cash": 300000, "energy": 2 },
+    "effect": { "trafficRate": 0.18, "marketingCost": 300000, "impulse": 3 },
+    "risk": ["投流不一定带来利润", "可能强化继续加码冲动"],
+    "processLogs": ["本地曝光位开始推送，午后进店咨询增加。", "新增订单里有不少薅优惠用户，复购还看不出来。"],
+    "insight": "投流要看留存，不只看当天订单。"
+  },
+  {
+    "id": "check_ledger",
+    "phase": "opening",
+    "title": "晚上认真算账",
+    "description": "花精力拆账，找出流水和利润的差异。",
+    "cost": { "energy": 2 },
+    "effect": { "information": 8, "impulse": -5 },
+    "risk": ["当晚更累"],
+    "processLogs": ["店主把平台抽成、满减、报废逐项拆开，发现忙碌没有完全变成利润。", "冲动加码被暂时压住，下一轮能看到更多真实成本。"],
+    "insight": "账本是小店老板最便宜的风控工具。"
+  },
+  {
+    "id": "cut_low_margin_sku",
+    "phase": "stable",
+    "title": "砍掉低毛利爆品",
+    "description": "减少忙碌但不赚钱的订单。",
+    "cost": { "energy": 1 },
+    "effect": { "trafficRate": -0.08, "materialRate": -0.04, "wasteRate": -0.05, "information": 3 },
+    "risk": ["短期客流下降", "老客不满"],
+    "processLogs": ["低毛利爆品从菜单醒目位撤下，前台咨询变少。", "后厨备料更轻，忙到崩溃但不赚钱的订单减少了。"],
+    "insight": "爆品如果只带来忙碌，不带来利润，就需要重新定价或砍掉。"
+  },
+  {
+    "id": "member_test",
+    "phase": "stable",
+    "title": "会员复购测试",
+    "description": "用小额权益测试老客复购，而不是继续扩大满减。",
+    "cost": { "cash": 80000, "energy": 2 },
+    "effect": { "repeatRate": 0.03, "trafficRate": 0.05, "discountRate": 0.02 },
+    "risk": ["短期效果不如满减明显"],
+    "processLogs": ["老客被引导进小额会员权益，复购数据开始有样本。", "优惠力度比大满减克制，客流增长不猛但质量更稳。"],
+    "insight": "能复购的客人才是现金流的地基。"
+  },
+  {
+    "id": "reduce_staff",
+    "phase": "stable",
+    "title": "减少排班",
+    "description": "降低人工成本，夫妻或店主自己多顶班。",
+    "cost": { "energy": 4 },
+    "effect": { "laborCost": -18000, "familyPressure": 4 },
+    "risk": ["体力下降", "高峰出错率上升"],
+    "processLogs": ["晚班少排一人，员工压力下降，人工成本立刻减少。", "店主自己顶上高峰，出餐还能撑住，但体力消耗更明显。"],
+    "insight": "省人工不是免费，它会从体力和家庭关系里扣。"
+  },
+  {
+    "id": "borrow_to_continue",
+    "phase": "crisis",
+    "title": "借款再撑一个月",
+    "description": "现金立刻变多，但还款压力会进入每一天的账本。",
+    "cost": {},
+    "effect": { "cash": 5000000, "debt": 5000000, "familyPressure": 8, "impulse": 5 },
+    "risk": ["债务压力上升", "如果模型没跑通，只是在延后问题"],
+    "processLogs": ["账户现金暂时变厚，短期不会立刻断粮。", "新的还款压力进入每日账本，家庭压力同步上升。"],
+    "insight": "借钱只能买时间，不能自动买来利润结构。"
+  },
+  {
+    "id": "stop_loss_transfer",
+    "phase": "crisis",
+    "title": "转让止损",
+    "description": "承认试错失败，回收一部分现金，保住家庭底线。",
+    "cost": { "energy": 3 },
+    "effect": { "cash": 4200000, "familyPressure": -18, "impulse": -12, "stopLoss": 1 },
+    "risk": ["需要接受已经亏掉的钱"],
+    "processLogs": ["店主开始清库存、谈转让，追回一部分现金。", "家里止损线被守住，压力下降，但这次试错的亏损需要复盘。"],
+    "insight": "止损不是认输，是把家庭现金流从火线上撤下来。"
+  }
+]

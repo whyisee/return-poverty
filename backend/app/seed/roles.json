@@ -1,0 +1,71 @@
+[
+  {
+    "id": "laid_off_manager",
+    "name": "被裁中层",
+    "description": "有补偿金和管理经验，但房贷、家庭支出和再就业焦虑都压在身上。",
+    "initialMetrics": {
+      "cash": 26000000,
+      "debt": 0,
+      "familyPressure": 55,
+      "energy": 72,
+      "reputation": 50,
+      "repeatRate": 0.1,
+      "information": 35,
+      "impulse": 52
+    },
+    "advantages": ["初始资金较高", "更容易理解账本"],
+    "risks": ["家庭固定支出高", "容易被沉没成本拖住"]
+  },
+  {
+    "id": "county_couple",
+    "name": "县城夫妻店",
+    "description": "夫妻共同经营，人工压力较小，但家庭和店铺几乎绑在一起。",
+    "initialMetrics": {
+      "cash": 16000000,
+      "debt": 0,
+      "familyPressure": 42,
+      "energy": 86,
+      "reputation": 52,
+      "repeatRate": 0.12,
+      "information": 28,
+      "impulse": 44
+    },
+    "advantages": ["人工成本低", "执行力强"],
+    "risks": ["休息能力弱", "家庭关系容易被经营压力波及"]
+  },
+  {
+    "id": "returning_founder",
+    "name": "返乡创业者",
+    "description": "有城市消费经验和审美意识，但容易高估本地消费力。",
+    "initialMetrics": {
+      "cash": 19000000,
+      "debt": 0,
+      "familyPressure": 38,
+      "energy": 80,
+      "reputation": 50,
+      "repeatRate": 0.11,
+      "information": 32,
+      "impulse": 58
+    },
+    "advantages": ["营销意识较好", "愿意做产品优化"],
+    "risks": ["容易高估客单价", "容易重装修"]
+  },
+  {
+    "id": "debt_franchisee",
+    "name": "背债加盟新手",
+    "description": "一部分启动资金来自贷款，行动快但容错率最低。",
+    "initialMetrics": {
+      "cash": 21000000,
+      "debt": 8000000,
+      "familyPressure": 62,
+      "energy": 78,
+      "reputation": 48,
+      "repeatRate": 0.09,
+      "information": 18,
+      "impulse": 70
+    },
+    "advantages": ["短期行动很快", "愿意投入"],
+    "risks": ["还款压力高", "更容易被追加投入诱惑"]
+  }
+]
+
